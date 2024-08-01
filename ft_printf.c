@@ -15,7 +15,7 @@ static int ft_check_specifier(char spec, va_list ap)
 //Subfunction for ft_printf: used to check '%format' and print other normal characters.
 //static function: The function can only be used in the the file it is declared.
 ///////////////////It is useful for internal implementation details and avoiding naming conflicts.
-///////////////////Eg.ft_check_format is a subfunction of ft_printf. Ft_printf, as a versatile function,
+///////////////////Eg.ft_check_format is a subfunction of ft_printf. ft_printf, as a versatile function,
 //////////////////////can be an global function used everywhere. However, its subfunctions are not.
 static int ft_check_format(const char *format, va_list ap, int len)
 {

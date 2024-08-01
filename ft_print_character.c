@@ -17,3 +17,44 @@ int ft_print_character(int c)
     //- Because we want to calculate the 'len',
     ////And for this function, everytime it runs successfully, we'll output 1 character.
 }
+
+int ft_print_string(char *s)
+{
+    int i;
+
+    if(!s)
+    {
+        if(write(1, "(null)", 6) != 6)
+            return (-1)
+        return (6);
+    }
+    i = 0;
+    while(s[i] != '\0')
+    //Can also be written as 'while(s[i])', this condition check whether s[i] is non-zero(for true). And the null character '\0'
+    {
+        if(!write(1,s[i],1))
+            return(-1);
+        i++;
+    }
+    return (i);
+}
+
+int	ft_print_str(char *s)
+{
+	int	i;
+
+	if (!s)
+	{
+		if (write(1, "(null)", 6) != 6)
+			return (-1);
+		return (6);
+	}
+	i = 0;
+	while (s[i])
+	{
+		if (ft_print_char(s[i]) == -1)
+			return (-1);
+		i++;
+	}
+	return (i);
+}
