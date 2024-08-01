@@ -3,31 +3,26 @@
 #Compilation Process: Check README.md
 
 CC = cc
-CFLAGS += -Wall -Wextra -Werror 
-AR = ar -rc
-RM = rm -rf
-Name = libftprintf.a
+CFLAGS = -Wall -Wextra -Werror
+AR = ar rcs
+
 SRCS = ft_printf.c ft_print_character.c
-OBJS = ft_printf.o ft_print_character.o
-Test = test
-#test is the excutable's name. Note that there's no file extension for excutables on Unix-like system
+OBJS = $(SRCS:.c=.o)
+NAME = libftprintf.a
+TEST = test
 
+all: $(NAME) $(TEST)
 
-all:$(Test)
+$(NAME): $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 
-$(Test):$(Name) test.o
-	$(CC) test.o $(Name) -o $(Test)
-
-$(Name):$(OBJS)
-	$(AR) $(Name) $(OBJS)
-
-%.o:%.c
-	$(CC) $(CFLAGS) -c $< -o $@
+$(TEST): $(NAME) test.o
+	$(CC) $(CFLAGS) -o $(TEST) test.o $(NAME)
 
 clean:
-	$(RM) *.o
+	rm -f $(OBJS) test.o
 
-fclean:clean
-	$(RM) $(Name) $(Test)
+fclean: clean
+	rm -f $(NAME) $(TEST)
 
-re:fclean all
+re: fclean all
