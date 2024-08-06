@@ -7,8 +7,9 @@
 ### About variadic variable
 
 ### About lib.a
-1.The file extension of an archive, which is a file that encapsulates all of the compiled object files (.o), is .a. Archives are used for the modularity of a program. Each archive can be treated as a module of the whole project.
+1.The file extension of an archive, which is a file that encapsulates all of the compiled object files (.o). Archives are used for the modularity of a program. Each archive can be treated as a module of the whole project.
 2.ar -rc *the name of the archive(.a)* *the object files the archive is going to encapsulate(.o)*
+3.gcc main.o lib.a -o *the name of the executable*
 
 ### About different excutable files
 1.'a.out' is the default name of the executable on Unix-like systems. Note that .out is just part of the name, not a file extension. In fact, there is no specific file extension for executables on Unix-like systems.
@@ -46,7 +47,7 @@ CC // c compiler
 RM // rm -f（default value）
 
 gcc // c compiler
--c // specifically for compiling.When use without -c, gcc is for linking
+-c // specifically for compiling. When use without -c, gcc is for linking
 -o // specify the name of the output file(the default name should be a.out/a.exe)
 -Wall -Wextra -Werror // warning messages flags, warn all, extra warnings, warnings as errors
 

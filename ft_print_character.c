@@ -18,7 +18,7 @@ int ft_print_character(int c)
     ////And for this function, everytime it runs successfully, we'll output 1 character.
 }
 
-int ft_print_string(char *s)
+/*int ft_print_string(char *s)
 {
     int i;
 
@@ -37,9 +37,9 @@ int ft_print_string(char *s)
         i++;
     }
     return (i);
-}
+}*/
 
-int	ft_print_str(char *s)
+/*int	ft_print_str(char *s)
 {
 	int	i;
 
@@ -57,4 +57,4 @@ int	ft_print_str(char *s)
 		i++;
 	}
 	return (i);
-}
+}*/

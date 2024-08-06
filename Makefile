@@ -11,13 +11,16 @@ OBJS = $(SRCS:.c=.o)
 NAME = libftprintf.a
 TEST = test
 
-all: $(NAME) $(TEST)
+all: $(TEST)
+
+$(TEST): $(NAME) test.o
+	$(CC) $(CFLAGS) test.o $(NAME) -o $@
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
-$(TEST): $(NAME) test.o
-	$(CC) $(CFLAGS) -o $(TEST) test.o $(NAME)
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS) test.o
