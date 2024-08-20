@@ -1,10 +1,35 @@
 # ft_printf
 ## The **objective** of this project
+1.The function signature of "printf": int printf(const char *format, ...);
+（1）The return value is the number of characters successfully output, or negative when there is an error.
+（2）const char *format:
+A.constant char: To ensure the string cannot be motified through the pointer, cause it is the users' input.
+B.*format: In fact, it is indeed a pointer to a char, which is used to represent strings in C. Since it includes the format specifiers, so it is called "format".
 
 ## The **solution** of this project
+1.the main function: 
+printfint ft_printf(const char *format,...) , used to declare the variable argument list and specify the specific variable to use;
+2.Subfunction for ft_printf:
+static int ft_check_format(const char *format, va_list ap, int len), used to check '%format' and print other normal characters.
+3.Subfunction for ft_check_format:
+static int ft_check_specifier(char spec, va_list ap)
+
 
 ## Useful Knowledge
-### About variadic variable
+### About variadic function
+*Variadic function: They are indeed a group of macros defined in the head file <stdarg.h>.
+*Macro:  A macro is a fragment of code that is given a name. Whenever the name is used, it is going to be replaced by the content of the macro before compilation.
+1.va_start(arg, last_param):
+Purpose: Initializes the variable argument list and sets the pointer to the first argument.
+Note: This only initializes the variable argument list and does not retrieve the value of arg (value retrieval is done using va_arg).
+2.va_arg(arg, type):
+Purpose: Retrieves the current argument value and interprets it as the specified type.
+Note:
+If the type does not match, it will result in undefined behavior.
+If there is no next argument, the behavior is also undefined.
+3.va_end(arg):
+Purpose: Ends the traversal of the variable argument list and cleans up any resources.
+Note: Although va_end may do nothing in some implementations, it is required by the standard to be called.
 
 ### About lib.a
 1.The file extension of an archive, which is a file that encapsulates all of the compiled object files (.o). Archives are used for the modularity of a program. Each archive can be treated as a module of the whole project.

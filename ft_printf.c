@@ -4,11 +4,31 @@ static int ft_check_specifier(char spec, va_list ap)
 //char spec: Since we have already obtained the value of the format, we can just use a character variable.
 {
     int len;
+
     len = 0;
     if(spec == 'c')
-    {
         len = ft_print_character(va_arg(ap, int));
-    }
+    else if(spec == 's')
+        len = ft_print_string(va_arg(ap, char*));
+    else if(spec == 'p')
+        len = ft_print_pointer(va_arg(ap,void*));
+    else if(spec == 'd' || spec == 'i')
+    //d for decimal, i for integer.
+        len = ft_print_digit((long)(va_arg(ap, int)), 10, 1);
+    //(long): For the standard 'printf' function, it only takes certain types.
+    //////////All these '(long)' are used to handle the '-2,147,483,648'
+    else if(spec == 'u')
+    //u for unsigned integer
+        len = ft_print_digit((long)(va_arg(ap, unsigned int)), 10, 1);
+    else if(spec == 'x')
+    //x for hexdecimal in lowercase
+        len = ft_print_digit((long)(va_arg(ap, unsigned int)), 10, 1);
+    //Hexadecimal integers are typically represented using unsigned int in C because they are often used to represent memory addresses, 
+    //bit patterns, or unsigned values where the sign of the number is irrelevant or could cause issues.
+    else if(spec == 'X')
+    //X for hexdecimal in uppercase
+        len = ft_print_digit((long)(va_arg(ap, unsigned int)), 10, 2);
+
     return (len);
 }
 
@@ -32,6 +52,7 @@ static int ft_check_format(const char *format, va_list ap, int len)
         {
             if(!format[i + 1])
                 return (len);
+            //!format[i + 1] == format[i + 1] != 0. And '\0' is equal to 0.
             j = ft_check_specifier(format[++i], ap);
             if(j == -1)
                 return (-1);
@@ -61,6 +82,7 @@ static int ft_check_format(const char *format, va_list ap, int len)
 int ft_printf(const char *format,...)
 {
     va_list ap;
+    //ap: argument pointer.
     int     len;
     len = 0;
     va_start(ap, format);
