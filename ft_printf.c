@@ -22,13 +22,14 @@ static int ft_check_specifier(char spec, va_list ap)
         len = ft_print_digit((long)(va_arg(ap, unsigned int)), 10, 1);
     else if(spec == 'x')
     //x for hexdecimal in lowercase
-        len = ft_print_digit((long)(va_arg(ap, unsigned int)), 10, 1);
+        len = ft_print_digit((long)(va_arg(ap, unsigned int)), 16, 1);
     //Hexadecimal integers are typically represented using unsigned int in C because they are often used to represent memory addresses, 
     //bit patterns, or unsigned values where the sign of the number is irrelevant or could cause issues.
     else if(spec == 'X')
     //X for hexdecimal in uppercase
-        len = ft_print_digit((long)(va_arg(ap, unsigned int)), 10, 2);
-
+        len = ft_print_digit((long)(va_arg(ap, unsigned int)), 16, 2);
+    else
+        write(1, &spec, 1) != 1;
     return (len);
 }
 

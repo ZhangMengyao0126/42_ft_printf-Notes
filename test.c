@@ -169,20 +169,20 @@ int	main(void)
 	printf("\n[test 1: 0]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%x", 0));
 	printf("  >>> printf: return value is %d\n", printf("%x", 0));
-	printf("\n[test 2: 42, -42]\n");//wrong
+	printf("\n[test 2: 42, -42]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%x, %x", 42, -42));
 	printf("  >>> printf: return value is %d\n", printf("%x, %x", 42, -42));
 	printf("\n[test 3: 042, 0x42]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%x, %x", 042, 0x42));
 	printf("  >>> printf: return value is %d\n", printf("%x, %x", 042, 0x42));
-	printf("\n[test 4: INT_MAX, INT_MIN, UINT_MAX]\n");//wrong
+	printf("\n[test 4: INT_MAX, INT_MIN, UINT_MAX]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%x, %x, %x", INT_MAX, INT_MIN, UINT_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%x, %x, %x", INT_MAX, INT_MIN, UINT_MAX));
 
-	printf("\n[test 5: 9223372036854775807LL]\n");//wrong
+	printf("\n[test 5: 9223372036854775807LL]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%x", 9223372036854775807LL));
 	printf("  >>> printf: return value is %d\n", printf("%x", 9223372036854775807LL));
-	printf("\n[test 6: LONG_MAX, LONG_MIN, ULONG_MAX]\n");//wrong
+	printf("\n[test 6: LONG_MAX, LONG_MIN, ULONG_MAX]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%x, %x, %x", LONG_MAX, LONG_MIN, ULONG_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%x, %x, %x", LONG_MAX, LONG_MIN, ULONG_MAX));
 
@@ -198,20 +198,20 @@ int	main(void)
 	printf("\n[test 1: 0]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%X", 0));
 	printf("  >>> printf: return value is %d\n", printf("%X", 0));
-	printf("\n[test 2: 42, -42]\n");//wrong
+	printf("\n[test 2: 42, -42]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%X, %X", 42, -42));
 	printf("  >>> printf: return value is %d\n", printf("%X, %X", 42, -42));
 	printf("\n[test 3: 042, 0x42]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%X, %X", 042, 0x42));
 	printf("  >>> printf: return value is %d\n", printf("%X, %X", 042, 0x42));
-	printf("\n[test 4: INT_MAX, INT_MIN, UINT_MAX]\n");//wrong
+	printf("\n[test 4: INT_MAX, INT_MIN, UINT_MAX]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%X, %X, %X", INT_MAX, INT_MIN, UINT_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%X, %X, %X", INT_MAX, INT_MIN, UINT_MAX));
 
-	printf("\n[test 5: 9223372036854775807LL]\n");//wrong
+	printf("\n[test 5: 9223372036854775807LL]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%X", 9223372036854775807LL));
 	printf("  >>> printf: return value is %d\n", printf("%X", 9223372036854775807LL));
-	printf("\n[test 6: LONG_MAX, LONG_MIN, ULONG_MAX]\n");//wrong
+	printf("\n[test 6: LONG_MAX, LONG_MIN, ULONG_MAX]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%X, %X, %X", LONG_MAX, LONG_MIN, ULONG_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%X, %X, %X", LONG_MAX, LONG_MIN, ULONG_MAX));
 
