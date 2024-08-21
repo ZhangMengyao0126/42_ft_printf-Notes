@@ -14,13 +14,13 @@ TEST = test
 all: $(TEST)
 
 $(TEST): $(NAME) test.o
-	$(CC) $(CFLAGS) test.o $(NAME) -o $@
+	$(CC) test.o $(NAME) -o $@
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) -c $< -o $@
 
 clean:
 	rm -f $(OBJS) test.o
