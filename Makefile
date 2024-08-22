@@ -3,7 +3,6 @@
 #Compilation Process: Check README.md
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 
 SRCS = ft_printf.c ft_print_character.c ft_print_digit.c ft_print_pointer.c

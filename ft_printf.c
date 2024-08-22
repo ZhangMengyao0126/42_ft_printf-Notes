@@ -29,7 +29,7 @@ static int ft_check_specifier(char spec, va_list ap)
     //X for hexdecimal in uppercase
         len = ft_print_digit((long)(va_arg(ap, unsigned int)), 16, 2);
     else
-        write(1, &spec, 1) != 1;
+        len = write(1, &spec, 1);
     return (len);
 }
 
