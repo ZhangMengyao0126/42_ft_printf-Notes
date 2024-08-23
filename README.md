@@ -41,13 +41,9 @@ Purpose: Ends the traversal of the variable argument list and cleans up any reso
 Note: Although va_end may do nothing in some implementations, it is required by the standard to be called.<br>
 
 ### About lib.a
-1. The file extension of an archive, which is a file that encapsulates all of the compiled object files (.o). Archives are used for the modulargity of a program. Each archive can be treated as a module of the whole project.<br>
-
-
+1.The file extension of an archive, which is a file that encapsulates all of the compiled object files (.o). Archives are used for the modulargity of a program. Each archive can be treated as a module of the whole project.<br>
 2.ar -rc *the name of the archive(.a)* *the object files the archive is going to encapsulate(.o)*<br>
-
-
-3. gcc main.o lib.a -o *the name of the executable*<br>
+3.gcc main.o lib.a -o *the name of the executable*<br>
 
 ### About different executable files
 1.'a.out' is the default name of the executable on Unix-like systems. Note that .out is just part of the name, not a file extension. In fact, there is no specific file extension for executables on Unix-like systems.<br>
