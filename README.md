@@ -80,7 +80,7 @@ rm // remove<br>
 -r // -recursive, remove the directory and all of its content<br>
 -f // -force<br>
 
-* // wildcard, all files with the specified file extension<br>
+·*· // wildcard, all files with the specified file extension<br>
 
 ar // archive<br>
 -r // replace: replace or add files in the archive. If the archive doesn't exist, then create one.<br>
