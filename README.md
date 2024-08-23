@@ -9,10 +9,10 @@
 
 ## Useful Knowledge
 ### About variadic function
-*Variadic function: They are indeed a group of macros defined in the head file <stdarg.h>.<br>*Macro:  A macro is a fragment of code that is given a name. Whenever the name is used, it is going to be replaced by the content of the macro before compilation.<be>  
-1.va_start(arg, last_param):<br>Purpose: Initializes the variable argument list and sets the pointer to the first argument.<br>Note: This only initializes the variable argument list and does not retrieve the value of arg (value retrieval is done using va_arg).<br>2.va_arg(arg, type):<br>Purpose: Retrieves the current argument value and interprets it as the specified type.<br>Note:<br>If the type does not match, it will result in undefined behavior.<br>If there is no next argument, the behavior is also undefined.<br>3.va_end(arg):<br>Purpose: Ends the traversal of the variable argument list and cleans up any resources.<br>Note: Although va_end may do nothing in some implementations, it is required by the standard to be called.
+*Variadic function: They are indeed a group of macros defined in the head file <stdarg.h>.<br>*Macro:  A macro is a fragment of code that is given a name. Whenever the name is used, it is going to be replaced by the content of the macro before compilation.<br>1.va_start(arg, last_param):<br>Purpose: Initializes the variable argument list and sets the pointer to the first argument.<br>Note: This only initializes the variable argument list and does not retrieve the value of arg (value retrieval is done using va_arg).<br>2.va_arg(arg, type):<br>Purpose: Retrieves the current argument value and interprets it as the specified type.<br>Note:<br>If the type does not match, it will result in undefined behavior.<br>If there is no next argument, the behavior is also undefined.<br>3.va_end(arg):<br>Purpose: Ends the traversal of the variable argument list and cleans up any resources.<br>Note: Although va_end may do nothing in some implementations, it is required by the standard to be called.
 
 ### About lib.a
+
 1. The file extension of an archive, which is a file that encapsulates all of the compiled object files (.o). Archives are used for the modulargity of a program. Each archive can be treated as a module of the whole project.
 2.ar -rc *the name of the archive(.a)* *the object files the archive is going to encapsulate(.o)*
 3. gcc main.o lib.a -o *the name of the executable*
