@@ -1,16 +1,16 @@
 # ft_printf
 ## The **objective** of this project
-1.The function signature of "printf": int printf(const char *format, ...);
+1. The function signature of "printf": int printf(const char *format, ...);
 （1）The return value is the number of characters successfully output, or negative when there is an error.
 （2）const char *format:
-A.constant char: To ensure the string cannot be motified through the pointer, cause it is the users' input.
+A.constant char: To ensure the string cannot be modified through the pointer, cause it is the users' input.
 B.*format: In fact, it is indeed a pointer to a char, which is used to represent strings in C. Since it includes the format specifiers, so it is called "format".
 
 ## The **solution** of this project
-1.the main function: 
-printfint ft_printf(const char *format,...) , used to declare the variable argument list and specify the specific variable to use;
+1.The main function: 
+int ft_printf(const char *format,...)，used to declare the variable argument list and specify the specific variable to use;
 2.Subfunction for ft_printf:
-static int ft_check_format(const char *format, va_list ap, int len), used to check '%format' and print other normal characters.
+static int ft_check_format(const char *format, va_list ap, int len)，used to check '%format' and print other normal characters.
 3.Subfunction for ft_check_format:
 static int ft_check_specifier(char spec, va_list ap)
 
@@ -32,13 +32,13 @@ Purpose: Ends the traversal of the variable argument list and cleans up any reso
 Note: Although va_end may do nothing in some implementations, it is required by the standard to be called.
 
 ### About lib.a
-1.The file extension of an archive, which is a file that encapsulates all of the compiled object files (.o). Archives are used for the modulargity of a program. Each archive can be treated as a module of the whole project.
+1. The file extension of an archive, which is a file that encapsulates all of the compiled object files (.o). Archives are used for the modulargity of a program. Each archive can be treated as a module of the whole project.
 2.ar -rc *the name of the archive(.a)* *the object files the archive is going to encapsulate(.o)*
-3.gcc main.o lib.a -o *the name of the executable*
+3. gcc main.o lib.a -o *the name of the executable*
 
-### About different excutable files
+### About different executable files
 1.'a.out' is the default name of the executable on Unix-like systems. Note that .out is just part of the name, not a file extension. In fact, there is no specific file extension for executables on Unix-like systems.
-2.'.exe' is the file extension of the executable on Windows.Note the reason you get both of the test and the test.exe is that maybe your development environment is set up for cross-compilation.
+2.'.exe' is the file extension of the executable on Windows. Note the reason you get both of the test and the test.exe is that maybe your development environment is set up for cross-compilation.
 
 ### About Makefile
 #### Complication Process
@@ -52,8 +52,8 @@ The assembly code will be converted into machine code by the assembler, resultin
 The linker will combine multiple object files and libraries to produce the final executable file (.out/.exe).
 
 #### What is Makefile
-1.Makefile is a build automation tool. It defines a set of rules and dependencies that dictate how to compile and link the program.
-2.Makefile will check the timestamps of all the targets and the dependencies to make sure that the output is the newest version. With Makefile, we don't have to recompile all the programs when there are changes in the original code.
+1. Makefile is a build automation tool. It defines a set of rules and dependencies that dictate how to compile and link the program.
+2. Makefile will check the timestamps of all the targets and the dependencies to make sure that the output is the newest version. With Makefile, we don't have to recompile all the programs when there are changes in the original code.
 
 #### Makefile syntax
 target: dependencies // target is created from dependencies
@@ -89,9 +89,10 @@ ar // archive
 
 
 ### About **markdone language**
-//.md：1.markdone language, which is a markup language commonly used to format README files.
-//file extensions: 1.A declaration to the operating system (OS) and to applications about how the file should be interpreted and handled.\2.Changing it won't lead to changes in the content.
-///////////////////3.Some file extensions are compatible, so even if you change them, you can still open the file with the same editor. For example, .md and .txt are both for plain text files, so you can open both of them with a text editor.
+//.md：markdone language, which is a markup language commonly used to format README files.
+//file extensions: 1. A declaration to the operating system (OS) and to applications about how the file should be interpreted and handled.
+                   2. Changing it won't lead to changes in the content.
+                   3. Some file extensions are compatible, so even if you change them, you can still open the file with the same editor. For example, .md and .txt are both for plain text f                            files, so you can open both of them with a text editor.
 
 Headers: 1. # for H1(Be aware of the space after #); # for H2 etc...  
          2. Headers can have up to six levels.
