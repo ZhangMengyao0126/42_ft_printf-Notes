@@ -16,7 +16,7 @@ static int ft_check_specifier(char spec, va_list ap)
 
 ## Useful Knowledge
 ### About variadic function
-*Variadic function: They are indeed a group of macros defined in the head file <stdarg.h>.<be>
+*Variadic function: They are indeed a group of macros defined in the head file <stdarg.h>.<br>
 *Macro:  A macro is a fragment of code that is given a name. Whenever the name is used, it is going to be replaced by the content of the macro before compilation.<br>
 1.va_start(arg, last_param):<br>
 Purpose: Initializes the variable argument list and sets the pointer to the first argument.<br>
