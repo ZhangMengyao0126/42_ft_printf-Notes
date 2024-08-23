@@ -2,6 +2,8 @@
 ## The **objective** of this project
 The function signature of "printf": int printf(const char *format, ...);<br>
 （1）The return value is the number of characters successfully output, or negative when there is an error.<br>
+
+
 （2）const char *format:<br>
 A.constant char: To ensure the string cannot be modified through the pointer, cause it is the users' input.<br>
 B.*format: It is just a pointer to a char, which is used to represent strings in C. Since it includes the format specifiers, so it is called "format".
@@ -99,8 +101,9 @@ Headers: <br>
 1. ·#· for H1(Be aware of the space after #); # for H2 etc...  <br>
 2. Headers can have up to six levels.<br>
 new paragraph: space and double enter//somehow doesn't work in github<br>
-new line: 1.double space and enter//somehow doesn't work in github;<br>
-          2.put `<br>` at the end of the line<br>
+new line: <br>
+1.double space and enter//somehow doesn't work in github;<br>
+2.put `<br>` at the end of the line<br>
 `#`text: Headers; # for H1; ## for H2; ### for H3.<br>
 `*`text`*`/_text_: Be italic.<br>
 `**`text`**`/__text__: Be bold.<br>
