@@ -120,6 +120,8 @@ ar // archive<br>
 
 ### About **Markdown language**
 //.md: Markdown language, which is a markup language commonly used to format README files.<br>
+
+
 //file extensions: <br>
 1. A declaration to the operating system (OS) and to applications about how the file should be interpreted and handled.<br>
 2. Changing it won't lead to changes in the content.<br>
@@ -129,10 +131,14 @@ ar // archive<br>
 Headers: <br>
 1. ·#· for H1(Be aware of the space after #); # for H2 etc...  <br>
 2. Headers can have up to six levels.<br>
+
+
 new paragraph: double enter<br>
 new line: <br>
 1.double space and enter//somehow doesn't work in github;<br>
 2.put `<br>` at the end of the line<br>
+
+
 `#`text: Headers; # for H1; ## for H2; ### for H3.<br>
 `*`text`*`/_text_: Be italic.<br>
 `**`text`**`/__text__: Be bold.<br>
