@@ -41,7 +41,6 @@ Purpose: Ends the traversal of the variable argument list and cleans up any reso
 Note: Although va_end may do nothing in some implementations, it is required by the standard to be called.<br>
 
 ### About lib.a
-
 1. The file extension of an archive, which is a file that encapsulates all of the compiled object files (.o). Archives are used for the modulargity of a program. Each archive can be treated as a module of the whole project.<br>
 
 
