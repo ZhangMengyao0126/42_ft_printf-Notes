@@ -98,11 +98,12 @@ ar // archive<br>
 Headers: <br>
 1. ·#· for H1(Be aware of the space after #); # for H2 etc...  <br>
 2. Headers can have up to six levels.<br>
-new paragraph: space and double enter<br>
-new line: double space and enter<br>
-#text: Headers; # for H1; ## for H2; ### for H3.<br>
-*text*/_text_: Be italic.<br>
-**text**/__text__: Be bold.<br>
-***text***:Be both italic and bold.<br>
-~text~: Strikethrough.<br>
-***/___/- - - between two paragraphs: divider.<br>
+new paragraph: space and double enter//somehow doesn't work in github<br>
+new line: 1.double space and enter//somehow doesn't work in github;<br>
+          2.put `<br>` at the end of the line<br>
+`#`text: Headers; # for H1; ## for H2; ### for H3.<br>
+`*`text`*`/_text_: Be italic.<br>
+`**`text`**`/__text__: Be bold.<br>
+`***`text`***`:Be both italic and bold.<br>
+`~`text`~`: Strikethrough.<br>
+`***`/`___`/`- - -` between two paragraphs: divider.<br>
