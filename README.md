@@ -90,8 +90,7 @@ ar // archive
 
 ### About **markdone language**
 //.md：1.markdone language, which is a markup language commonly used to format README files.
-//file extensions: 1.A declaration to the operating system (OS) and to applications about how the file should be interpreted and handled.
-///////////////////2.Changing it won't lead to changes in the content.
+//file extensions: 1.A declaration to the operating system (OS) and to applications about how the file should be interpreted and handled.\2.Changing it won't lead to changes in the content.
 ///////////////////3.Some file extensions are compatible, so even if you change them, you can still open the file with the same editor. For example, .md and .txt are both for plain text files, so you can open both of them with a text editor.
 
 Headers: 1. # for H1(Be aware of the space after #); # for H2 etc...  
