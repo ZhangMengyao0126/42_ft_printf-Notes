@@ -85,7 +85,9 @@ int ft_printf(const char *format,...)
     va_list ap;
     //ap: argument pointer.
     int     len;
+
     len = 0;
+
     va_start(ap, format);
     len += ft_check_format(format, ap, len);
     va_end(ap);

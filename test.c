@@ -52,7 +52,7 @@ int	main(void)
 	printf("/*                                                    */\n");
 	printf("/* ************************************************** */\n");
 
-	printf("\n[test 1: *0]\n");//wrong
+	printf("\n[test 1: *0]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%p", (void *)0));
 	printf("  >>> printf: return value is %d\n", printf("%p", (void *)0));
 	printf("\n[test 2: *42, *-42]\n");
@@ -90,14 +90,14 @@ int	main(void)
 	printf("\n[test 4: INT_MAX, INT_MIN, UINT_MAX)]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%d, %d, %d", INT_MAX, INT_MIN, UINT_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%d, %d, %d", INT_MAX, INT_MIN, UINT_MAX));
-/*
+
 	printf("\n[test 5: 9223372036854775807LL]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%d", 9223372036854775807LL));
 	printf("  >>> printf: return value is %d\n", printf("%d", 9223372036854775807LL));
 	printf("\n[test 6: LONG_MAX, LONG_MIN, ULONG_MAX]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%d, %d, %d", LONG_MAX, LONG_MIN, ULONG_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%d, %d, %d", LONG_MAX, LONG_MIN, ULONG_MAX));
-*/
+
 	printf("\n");
 
 	//integer base 10
@@ -119,14 +119,14 @@ int	main(void)
 	printf("\n[test 4: INT_MAX, INT_MIN, UINT_MAX]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%i, %i, %i", INT_MAX, INT_MIN, UINT_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%i, %i, %i", INT_MAX, INT_MIN, UINT_MAX));
-/*
+
 	printf("\n[test 5: 9223372036854775807LL]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%i", 9223372036854775807LL));
 	printf("  >>> printf: return value is %d\n", printf("%i", 9223372036854775807LL));
 	printf("\n[test 6: LONG_MAX, LONG_MIN, ULONG_MAX]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%i, %i, %i", LONG_MAX, LONG_MIN, ULONG_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%i, %i, %i", LONG_MAX, LONG_MIN, ULONG_MAX));
-*/
+
 	printf("\n");
 	
 	//unsigned decimal base 10
@@ -148,14 +148,14 @@ int	main(void)
 	printf("\n[test 4: INT_MAX, INT_MIN, UINT_MAX]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%u, %u, %u", INT_MAX, INT_MIN, UINT_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%u, %u, %u", INT_MAX, INT_MIN, UINT_MAX));
-/*
+
 	printf("\n[test 5: 9223372036854775807LL]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%i", 9223372036854775807LL));
 	printf("  >>> printf: return value is %d\n", printf("%i", 9223372036854775807LL));
 	printf("\n[test 6: LONG_MAX, LONG_MIN, ULONG_MAX]\n");
 	printf("  >>> ft_printf: return value is %d\n", ft_printf("%i, %i, %i", LONG_MAX, LONG_MIN, ULONG_MAX));
 	printf("  >>> printf: return value is %d\n", printf("%i, %i, %i", LONG_MAX, LONG_MIN, ULONG_MAX));
-*/
+
 	printf("\n");
 
 
@@ -217,7 +217,7 @@ int	main(void)
 
 	printf("\n");
 
-	//percent sign //all wrong
+	//percent sign
 	printf("/* ************************************************** */\n");
 	printf("/*                                                    */\n");	
 	printf("/*                         %%%%                         */\n");

@@ -1,3 +1,4 @@
+#To test the functions, there's No CFLAGS in this Makefile
 #.c: files in C language
 #.o: files transformed into machine language(binary)
 #Compilation Process: Check README.md
