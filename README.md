@@ -50,10 +50,10 @@ Note: Although va_end may do nothing in some implementations, it is required by 
 3. gcc main.o lib.a -o *the name of the executable*<br>
 
 ### About different executable files
-1.'a.out' is the default name of the executable on Unix-like systems. Note that .out is just part of the name, not a file extension. In fact, there is no specific file extension for executables on Unix-like systems.<br>
+1. 'a.out' is the default name of the executable on Unix-like systems. Note that .out is just part of the name, not a file extension. In fact, there is no specific file extension for executables on Unix-like systems.<br>
 
 
-2.'.exe' is the file extension of the executable on Windows. Note the reason you get both of the test and the test.exe is that maybe your development environment is set up for cross-compilation.<br>
+2. '.exe' is the file extension of the executable on Windows. Note the reason you get both of the test and the test.exe is that maybe your development environment is set up for cross-compilation.<br>
 
 ### About Makefile
 #### Complication Process
