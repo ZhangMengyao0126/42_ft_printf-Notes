@@ -96,7 +96,7 @@ ar // archive<br>
                    3. Some file extensions are compatible, so even if you change them, you can still open the file with the same editor. For example, .md and .txt are both for plain text f                            files, so you can open both of them with a text editor.<br>
 
 Headers: <br>
-1. # for H1(Be aware of the space after #); # for H2 etc...  <br>
+1. ·#· for H1(Be aware of the space after #); # for H2 etc...  <br>
 2. Headers can have up to six levels.<br>
 new paragraph: space and double enter<br>
 new line: double space and enter<br>
