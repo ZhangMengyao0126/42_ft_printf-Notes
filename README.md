@@ -4,12 +4,7 @@
    <br>（2）const char *format:<br>A.constant char: To ensure the string cannot be modified through the pointer, cause it is the users' input.<br>B.*format: In fact, it is indeed a pointer to a char, which is used to represent strings in C. Since it includes the format specifiers, so it is called "format".
 
 ## The **solution** of this project
-1.The main function: 
-int ft_printf(const char *format,...)，used to declare the variable argument list and specify the specific variable to use;
-2.Subfunction for ft_printf:
-static int ft_check_format(const char *format, va_list ap, int len)，used to check '%format' and print other normal characters.
-3.Subfunction for ft_check_format:
-static int ft_check_specifier(char spec, va_list ap)
+1.The main function: <br>int ft_printf(const char *format,...)，used to declare the variable argument list and specify the specific variable to use;<br>2.Subfunction for ft_printf:<br>static int ft_check_format(const char *format, va_list ap, int len)，used to check '%format' and print other normal characters.<br>3.Subfunction for ft_check_format:<br>static int ft_check_specifier(char spec, va_list ap)
 
 
 ## Useful Knowledge
