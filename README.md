@@ -1,9 +1,9 @@
 # ft_printf
 ## The **objective** of this project
-1. The function signature of "printf": int printf(const char *format, ...);<be>
-（1）The return value is the number of characters successfully output, or negative when there is an error.<be>
-（2）const char *format:<be>
-A.constant char: To ensure the string cannot be modified through the pointer, cause it is the users' input.<be>
+1. The function signature of "printf": int printf(const char *format, ...);<br>
+（1）The return value is the number of characters successfully output, or negative when there is an error.<br>
+（2）const char *format:<br>
+A.constant char: To ensure the string cannot be modified through the pointer, cause it is the users' input.<br>
 B.*format: In fact, it is indeed a pointer to a char, which is used to represent strings in C. Since it includes the format specifiers, so it is called "format".
 
 ## The **solution** of this project
