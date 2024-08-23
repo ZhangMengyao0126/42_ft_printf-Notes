@@ -24,19 +24,19 @@ static int ft_check_specifier(char spec, va_list ap)
 *Macro:  A macro is a fragment of code that is given a name. Whenever the name is used, it is going to be replaced by the content of the macro before compilation.<br>
 
 
-1.va_start(arg, last_param):<br>
+1. va_start(arg, last_param):<br>
 Purpose: Initializes the variable argument list and sets the pointer to the first argument.<br>
 Note: This only initializes the variable argument list and does not retrieve the value of arg (value retrieval is done using va_arg).<br>
 
 
-2.va_arg(arg, type):<br>
+2. va_arg(arg, type):<br>
 Purpose: Retrieves the current argument value and interprets it as the specified type.<br>
 Note:<br>
 If the type does not match, it will result in undefined behavior.<br>
 If there is no next argument, the behavior is also undefined.<br>
 
 
-3.va_end(arg):<br>
+3. va_end(arg):<br>
 Purpose: Ends the traversal of the variable argument list and cleans up any resources.<br>
 Note: Although va_end may do nothing in some implementations, it is required by the standard to be called.<br>
 
