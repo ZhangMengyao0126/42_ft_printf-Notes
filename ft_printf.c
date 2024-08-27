@@ -54,6 +54,8 @@ static int ft_check_format(const char *format, va_list ap, int len)
             if(!format[i + 1])
                 return (len);
             //!format[i + 1] == format[i + 1] != 0. And '\0' is equal to 0.
+            //If there is just one single '%', we will print nothing and return the len directly. The return value is also 0 on iso system. But on linux, it is -1.
+            //However, Moulinette won't go into that kind of detail.
             j = ft_check_specifier(format[++i], ap);
             if(j == -1)
                 return (-1);
