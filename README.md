@@ -1,5 +1,7 @@
 # ft_printf
 ## The **objective** of this project
+To recode the printf() function from libc.
+
 The function signature of "printf": int printf(const char *format, ...);<br>
 1. The return value is the number of characters successfully output, or negative when there is an error.<br>
 2. const char *format:<br>
