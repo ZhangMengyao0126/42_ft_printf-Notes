@@ -148,7 +148,7 @@ Table：<br>
 | :----|:----:|----:|
 |test|test|test|
 
-<img src="https://github.com/user-attachments/assets/4af534f8-ba85-4b20-bfc2-e77b0466f1ba" width="300" height="100" />
+<img src="https://github.com/user-attachments/assets/4af534f8-ba85-4b20-bfc2-e77b0466f1ba" width="250" height="100" />
 
 Image: <br>
 `<img src="link" alt="description" width="400" height="300" />`
