@@ -135,12 +135,13 @@ Headers: <br>
 2. Headers can have up to six levels.<br>
 
 
-new paragraph: double enter<br>
-new line: <br>
+New paragraph: double enter<br>
+New line: <br>
 1. double space and enter//somehow doesn't work in github;<br>
 2. put `<br>` at the end of the line<br>
 
-table<br>
+
+Table<br>
 | left | middle | right |
 | :----|:----:|----:|
 |test|test|test|
