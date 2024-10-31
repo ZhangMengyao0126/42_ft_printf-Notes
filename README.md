@@ -148,10 +148,10 @@ Table：<br>
 | :----|:----:|----:|
 |test|test|test|
 
-<img src="https://github.com/user-attachments/assets/4af534f8-ba85-4b20-bfc2-e77b0466f1ba" width="400" height="300" />
+<img src="https://github.com/user-attachments/assets/4af534f8-ba85-4b20-bfc2-e77b0466f1ba" width="40" height="30" />
 
 Image: <br>
-<img src="link" alt="description" width="400" height="300" />
+`<img src="link" alt="description" width="400" height="300" />`
 
 
 `#`text: Headers; # for H1; ## for H2; ### for H3.<br>
