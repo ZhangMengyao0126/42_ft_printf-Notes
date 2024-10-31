@@ -140,6 +140,10 @@ new line: <br>
 1. double space and enter//somehow doesn't work in github;<br>
 2. put `<br>` at the end of the line<br>
 
+table<br>
+| left | middle | right |
+| :----|:----:|----:|
+|test|test|test|
 
 `#`text: Headers; # for H1; ## for H2; ### for H3.<br>
 `*`text`*`/_text_: Be italic.<br>
