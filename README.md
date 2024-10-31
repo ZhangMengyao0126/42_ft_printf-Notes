@@ -136,6 +136,8 @@ Headers: <br>
 
 
 New paragraph: double enter<br>
+
+
 New line: <br>
 1. double space and enter//somehow doesn't work in github;<br>
 2. put `<br>` at the end of the line<br>
@@ -146,7 +148,10 @@ Table：<br>
 | :----|:----:|----:|
 |test|test|test|
 
-![image](https://github.com/user-attachments/assets/4af534f8-ba85-4b20-bfc2-e77b0466f1ba)
+<img src="https://github.com/user-attachments/assets/4af534f8-ba85-4b20-bfc2-e77b0466f1ba" width="400" height="300" />
+
+Image: <br>
+<img src="link" alt="description" width="400" height="300" />
 
 
 `#`text: Headers; # for H1; ## for H2; ### for H3.<br>
