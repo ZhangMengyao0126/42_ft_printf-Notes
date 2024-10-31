@@ -141,7 +141,7 @@ New line: <br>
 2. put `<br>` at the end of the line<br>
 
 
-Table<br>
+Table：<br>
 | left | middle | right |
 | :----|:----:|----:|
 |test|test|test|
