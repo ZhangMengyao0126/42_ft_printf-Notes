@@ -160,3 +160,5 @@ Image: <br>
 `***`text`***`:Be both italic and bold.<br>
 `~`text`~`: Strikethrough.<br>
 `***`/`___`/`- - -` between two paragraphs: divider.<br>
+
+````` Add this to the first and last lines of the paragraph to encapsulate the text.<br>
