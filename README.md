@@ -161,4 +161,4 @@ Image: <br>
 `~`text`~`: Strikethrough.<br>
 `***`/`___`/`- - -` between two paragraphs: divider.<br>
 
-````` Add this to the first and last lines of the paragraph to encapsulate the text.<br>
+ Add ` ``` ` to the first and last lines of the paragraph to encapsulate the text.<br>
